@@ -1,0 +1,5 @@
+before deleting the eks cluster , rollback any changes made to the node group
+
+- delete the additional roles created
+- delete additional inbound rules that are created
+

@@ -1,0 +1,27 @@
+containers and os 
+
+A container does not have its own operating system in the traditional sense, but rather a lightweight and isolated runtime environment that includes only the necessary components of the operating system required by the containerized application. This runtime environment relies on the operating system of the physical machine on which it is running, but it is isolated from other processes running on the same machine.
+
+Containers rely on a feature of the operating system kernel called namespaces, which allows them to create isolated environments for various system resources, such as the filesystem, network, and process trees. Each container has its own namespace for each of these resources, allowing it to operate as if it were the only process running on the system. This isolation is what allows containers to provide a consistent and reproducible runtime environment for applications, regardless of the underlying hardware or operating system.
+
+While containers do rely on the underlying operating system kernel for some functionality, they do not run a full operating system in the way that a virtual machine does. Instead, they rely on the operating system kernel to provide low-level system services and resources, such as process scheduling, memory management, and network communication, while the container runtime environment provides an isolated and lightweight execution environment for the containerized application.
+
+
+os vs kernel
+
+Both operating system and Kernel are types of system software. The basic difference between the two is that an operating system is a system software that acts as the interface between the users and the machine, while a kernel is a part of the operating system that converts user commands into machine language.
+
+
+why containers ?
+
+flexible
+leightweight
+portable
+loosely coupled
+scalable
+secure
+
+
+it will not be possible for me to attend the interview today. I apologize for any inconvenience this may cause.
+
+Please let me know if there is any possibility of rescheduling the interview for a later date. I remain very interested in the opportunity and look forward to discussing my qualifications with you.
