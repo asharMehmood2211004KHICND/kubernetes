@@ -1,0 +1,9 @@
+replica set scaling 
+------------------
+update replica set
+
+kubectl scale 
+
+enable horizontal pod autoscaler
+
+

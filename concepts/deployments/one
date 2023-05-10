@@ -1,0 +1,16 @@
+deployments enable us to rollout to the specific version of image
+
+rolling update -> zero down time    ----- why scaling up and down here.
+
+recreate --> delete all pods , then recreate --> there will be a downtime
+
+e.g mysql --> recreate
+
+when we update a deployment a new rs is created and old one got down
+--------------------------------
+
+when we want alot of changes in our deployment we pause and resume it.
+
+pausing a deployment doesnt mean the traffic will not be able to access our deployed app.
+it means everything that we do now is paused (e.g changing version etc)
+

@@ -1,0 +1,16 @@
+kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0 --port 80, what does --port 80 mean here
+
+
+In this case, the value of --port is set to 80, which means that the container running inside the pod will be listening for incoming traffic on port 80.
+
+
+kubectl expose pod my-first-pod  --type=NodePort --port=80 --name=my-first-service
+, what does --port=80 means here now?
+
+In this case, the value of --port is set to 80, which means that the service will listen for incoming traffic on port 80. When a request is received on this port, Kubernetes will forward the traffic to one of the pods that the service is managing, and then route the response back to the client.
+
+
+- service is across the worker nodes can be accessed on both the nodes
+
+
+

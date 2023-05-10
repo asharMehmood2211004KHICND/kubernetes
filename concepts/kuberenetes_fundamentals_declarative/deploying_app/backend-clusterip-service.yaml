@@ -1,0 +1,17 @@
+apiVersion: v1 
+kind: Service 
+metadata:
+  name: my-backend-service # imp, proxypass needs this name
+  labels:
+    app: backend-restapp
+    tier: backend
+spec:
+  #type: ClusterIP
+  selector: 
+    app: backend-restapp # reference to pods
+  ports:
+    - name: http 
+      port: 8080   #clusterip service port
+      targetPort: 8080  #container port
+
+    
